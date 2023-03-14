@@ -1,1 +1,1 @@
-This react web application consume a rest api web service that builded using PHP in WordPress
+This react web application consumes a rest API web service, for update products stock WooCommerce, building using PHP in WordPress.
