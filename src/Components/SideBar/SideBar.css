@@ -1,0 +1,60 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+}
+.sideBar {
+  margin-right: 0px;
+  width: 200px;
+  height: 100vh;
+  background-color: #14101b;
+}
+.top {
+  font-size: larger;
+  text-align: center;
+  padding-top: 27px;
+}
+.logo {
+  color: aliceblue;
+
+}
+.links ul {
+  color: aliceblue;
+  list-style: none;
+  padding-top: 55px;
+}
+.icon {
+  font-size: 21px;
+  padding: 0px 10px;
+}
+.link {
+  display: flex;
+  color: aliceblue;
+  font-size: 17px;
+  padding: 20px 0px;
+  margin: 9px 0;
+}
+.link:hover {
+  background-color: #362e46;
+}
+.link-active {
+  display: flex;
+  color: aliceblue;
+  font-size: 17px;
+  padding: 20px 0px;
+  margin: 9px 0;
+  background-color: #362e46;
+}
+.buttom {
+  margin-left: 11px;
+  margin-top: 70px;
+}
+.ismail-chouhad {
+  font-size: 9px;
+  color: aliceblue;
+}
+strong {
+  padding-left: 7px;
+  font-size: 11px;
+  text-decoration: underline;
+}
