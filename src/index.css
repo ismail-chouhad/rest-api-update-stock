@@ -30,6 +30,9 @@
   align-items: center;
   justify-content: center;
 }
+.copy-to-clipboard {
+  margin: 0 10px;
+}
 @media screen and (max-width: 768px) {
   .parent {
     display: flex;

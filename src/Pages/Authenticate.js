@@ -14,7 +14,9 @@ import {
 import axios from "axios";
 import { Fragment, useState } from "react";
 import SideBar from "../Components/SideBar/SideBar";
-import { PropagateLoader } from "react-spinners";
+import { ScaleLoader } from "react-spinners";
+import { MdContentCopy } from "react-icons/md";
+import CopyToClipboard from "react-copy-to-clipboard";
 
 const Authenticate = () => {
   const buttonStyle = { marginTop: "10px" };
@@ -81,7 +83,7 @@ const Authenticate = () => {
       </div>
       {isLoading && (
         <div className="isLoading">
-          <PropagateLoader
+          <ScaleLoader
             color={"#123abc"}
             loading={true}
             css={{ backgroundColor: "yellow", width: "30px", height: "30px" }}
@@ -135,13 +137,25 @@ const Authenticate = () => {
                     <TableHead>
                       <TableRow>
                         <TableCell>
-                          <b>Token</b>
+                          <b>
+                            Token <small>(10 hours to expired)</small>
+                          </b>
                         </TableCell>
                       </TableRow>
                     </TableHead>
                     <TableBody>
                       <TableRow>
-                        <TableCell>{token}</TableCell>
+                        <TableCell>
+                          <CopyToClipboard text={token}>
+                            <small>{token}</small>
+                          </CopyToClipboard>
+                          <CopyToClipboard text={token}>
+                            <MdContentCopy
+                              size={20}
+                              className="copy-to-clipboard"
+                            />
+                          </CopyToClipboard>
+                        </TableCell>
                       </TableRow>
                     </TableBody>
                   </Table>
