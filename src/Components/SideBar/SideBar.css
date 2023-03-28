@@ -16,7 +16,6 @@
 }
 .logo {
   color: aliceblue;
-
 }
 .links ul {
   color: aliceblue;
@@ -57,4 +56,60 @@ strong {
   padding-left: 7px;
   font-size: 11px;
   text-decoration: underline;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .sideBar {
+    width: 100vw;
+    height: 100px;
+    background-color: #14101b;
+    overflow: hidden;
+  }
+  .top {
+    font-size: medium;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .links ul {
+    display: flex;
+    color: aliceblue;
+    padding: 1px;
+    column-gap: 10px;
+    justify-content: center;
+  }
+  .link {
+    display: flex;
+    color: aliceblue;
+    font-size: 9px;
+    padding: 10px 5px;
+    align-items: center;
+  }
+  .link-active {
+    display: flex;
+    color: aliceblue;
+    font-size: 9px;
+    background-color: #362e46;
+    padding: 10px 5px;
+    align-items: center;
+    border-radius: 5%;
+  }
+  .icon {
+    font-size: 17px;
+    padding: 0 10px 0 0;
+  }
+  .buttom {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .ismail-chouhad {
+    font-size: 5px;
+    color: aliceblue;
+  }
+  strong {
+    padding-left: 0px;
+    font-size: 9px;
+    text-decoration: underline;
+  }
 }

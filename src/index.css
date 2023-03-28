@@ -1,15 +1,72 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 .parent {
-    display: flex;
-    column-gap: 15%;
+  display: flex;
+  /* column-gap: 15%; */
 }
 .table {
-    overflow:auto;
+  overflow: auto;
+}
+.child-2 {
+  width: 100%;
+  padding: 0 100px;
 }
 .child-2-1 {
-    padding: 70px 0;
+  padding: 70px 0;
 }
-   
+.ok {
+  background-color: #5d00ff;
+}
+.isLoading {
+  position: absolute;
+  background-color: rgba(39, 23, 66, 0.377);
+  width: calc(100% - 200px);
+  left: 200px;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    row-gap: 15px;
+  }
+  .child-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    width: 100%;
+    padding: 0;
+  }
+  .child-2-1 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 0px;
+  }
+  .content-zone {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+  }
+  .isLoading {
+    position: absolute;
+    background-color: rgba(39, 23, 66, 0.377);
+    height: calc(100% - 100px);
+    width: 100%;
+    left: 0px;
+    top: 100px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
